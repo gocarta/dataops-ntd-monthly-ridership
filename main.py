@@ -57,6 +57,9 @@ client.update_dataset(
         "State",
         "FTA Region",
     ],
+    json=True,
+    jsonl=True,
+    parquet=True,
 )
 
 print(f"[dataops-ntd-monthly-ridership] updated {len(rows)} rows")
