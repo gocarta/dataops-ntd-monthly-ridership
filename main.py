@@ -8,6 +8,7 @@
 # ///
 import csv
 import datablob
+from datetime import datetime
 import io
 import requests
 import simple_env as se
@@ -44,6 +45,8 @@ for row in rows:
             row[key] = None
         else:
             row[key] = float(value)
+
+    row["Date"] = datetime.strptime(row["Date"], "%B %Y").strftime("%Y-%m")
 
 client = datablob.DataBlobClient(
     bucket_name=AWS_BUCKET_NAME, bucket_path=AWS_BUCKET_PATH
