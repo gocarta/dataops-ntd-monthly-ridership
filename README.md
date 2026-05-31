@@ -4,6 +4,9 @@ Complete Monthly Ridership (with Adjustments and Estimates) from the National Tr
 ## frequency
 The pipeline runs once an hour, but the data only changes once per month.
 
+## data source
+Data is from the National Transit Database, specifically the "Complete Monthly Ridership (with Adjustments and Estimates)" dataset found [here](https://data.transportation.gov/Public-Transit/Complete-Monthly-Ridership-with-Adjustments-and-Es/8bui-9xvu).
+
 ## columns
 | column | example | description |
 | :--- | :--- | :--- |
