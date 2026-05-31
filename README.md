@@ -29,15 +29,11 @@ The pipeline runs once an hour, but the data only changes once per month.
 ## download links
 - [metadata](https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/meta.json)
 - [csv](https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/data.csv)
-- [geojson](https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/data.points.geojson)
-- [geoparquet](https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/data.parquet)
 - [json](https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/data.json)
 - [json lines](https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/data.jsonl)
-- [shapefile](https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/data.points.shp.zip)
+- [parquet](https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/data.parquet)
 
-## preview links
-- You can view the geojson on a map using [geojson.io](https://geojson.io/#data=data:text/x-url,https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/data.points.geojson).
-- You can view the shapefile on a map using [shapefile.io](https://shapefile.io?url=https://gocarta.s3.us-east-2.amazonaws.com/public/data/ntd_monthly_ridership/v1/data.points.shp.zip).
+## preview link
 - You can query the data with SQL using [duckdb](https://shell.duckdb.org/#queries=v0,CREATE-TABLE-dataset-AS-SELECT-*-FROM-'s3%3A%2F%2Fgocarta%2Fpublic%2Fdata%2Fntd_monthly_ridership%2Fv1%2Fdata.parquet'~,Describe-dataset~,SELECT-Date%2C-UPT-FROM-dataset-WHERE-Agency-%3D-'Chattanooga-Area-Regional-Transportation-Authority'-AND-Mode-%3D-'IP'-ORDER-BY-Date-DESC-LIMIT-5~).
 
 ## support
